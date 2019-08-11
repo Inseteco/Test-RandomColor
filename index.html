@@ -6,10 +6,12 @@
   </head>
   <body>
       <div id="app">
-      
-      <div class="block" :style="{ backgroundColor: backColor }">
-      </div>
-      <button class="color" @click="generator">Random</button>
+        <div class="block" :style="{ backgroundColor: backColor }"></div>
+        <button
+          v-text="'Random'"
+          @click="generator()"
+          class="color"
+        ></button>
       </div>
     <script src="./app.js"></script>
   </body>
